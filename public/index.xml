@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Vrushabh Donge</title>
+    <title>Home on Vrushabh Donge</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Vrushabh Donge</description>
+    <description>Recent content in Home on Vrushabh Donge</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Feb 2026 16:17:10 -0500</lastBuildDate>
@@ -32,6 +32,35 @@
 &lt;p&gt;## What I bring&lt;/p&gt;
 &lt;p&gt;- Translating ambiguous grid/asset problems into clear product requirements and success metrics&lt;/p&gt;
 &lt;p&gt;- Designing “minimum lovable” prototypes and iterating based on performance, reliability, and user needs&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/</guid>
+      <description>&lt;h2 id=&#34;selected-publications&#34;&gt;Selected publications&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;(Add your key journal/conference items here)&lt;/li&gt;
+&lt;li&gt;(Add IEEE Xplore links when available)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;preprints--under-review&#34;&gt;Preprints / Under review&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;(Add items here)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;patents--disclosures&#34;&gt;Patents / Disclosures&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;(Add items here, if/when public)&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Teaching</title>
+      <link>http://localhost:1313/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;(Add guest lectures, mentoring, or training sessions here)&lt;/li&gt;
+&lt;li&gt;(Optional) Reading lists or short notes&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
