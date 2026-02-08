@@ -2,18 +2,15 @@
 title: "Publications"
 ---
 
-## Publications
+## Journal Articles
 
-- **Data-Driven Voltage Regulation of Distribution Grid Using Nonlinear Autoregressive Model with Exogenous Inputs (NARX)**
-  *V. S. Donge, J. Pinto, A. Adib, M. Chinthavali*
-  *IEEE Energy Conversion Congress and Exposition (ECCE) (2025)*
-  [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zb04ci4AAAAJ&citation_for_view=Zb04ci4AAAAJ:KlAtU1dfN6UC)
-
+### 2024
 - **Efficient Reward Shaping for Multiagent Systems**
   *V. S. Donge, B. Lian, F. L. Lewis, A. Davoudi*
   *IEEE Transactions on Artificial Intelligence (2024)*
   [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zb04ci4AAAAJ&citation_for_view=Zb04ci4AAAAJ:3fE2CSJIrl8C)
 
+### 2023
 - **Data-Efficient Reinforcement Learning for Complex Nonlinear Systems**
   *V. S. Donge, B. Lian, F. L. Lewis, A. Davoudi*
   *IEEE Transactions on Cybernetics (2023)*
@@ -24,6 +21,7 @@ title: "Publications"
   *IEEE Transactions on Control of Network Systems (2023)*
   [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10076803/)
 
+### 2022
 - **Data-Driven Inverse Reinforcement Learning Control for Linear Multiplayer Games**
   *B. Lian, V. S. Donge, F. L. Lewis, T. Chai, A. Davoudi*
   *IEEE Transactions on Neural Networks and Learning Systems (2022)*
@@ -39,16 +37,27 @@ title: "Publications"
   *IEEE Transactions on Neural Networks and Learning Systems (2022)*
   [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9933469/)
 
-- **Inverse Reinforcement Learning Control for Linear Multiplayer Games**
-  *B. Lian, V. S. Donge, F. L. Lewis, T. Chai, A. Davoudi*
-  *IEEE 61st Conference on Decision and Control (CDC) (2022)*
-  [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zb04ci4AAAAJ&citation_for_view=Zb04ci4AAAAJ:W7OEmFMy1HYC)
-
+### 2020
 - **Robust Path Integral Control on Stochastic Differential Games**
   *V. S. Donge, P. Akshay, S. Kharade, S. R. Wagh, N. M. Singh*
   *IEEE/CAA Journal of Automatica Sinica (2020)*
   [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zb04ci4AAAAJ&citation_for_view=Zb04ci4AAAAJ:d1gkVwhDpl0C)
 
+## Conference Proceedings
+
+### 2025
+- **Data-Driven Voltage Regulation of Distribution Grid Using Nonlinear Autoregressive Model with Exogenous Inputs (NARX)**
+  *V. S. Donge, J. Pinto, A. Adib, M. Chinthavali*
+  *IEEE Energy Conversion Congress and Exposition (ECCE) (2025)*
+  [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zb04ci4AAAAJ&citation_for_view=Zb04ci4AAAAJ:KlAtU1dfN6UC)
+
+### 2022
+- **Inverse Reinforcement Learning Control for Linear Multiplayer Games**
+  *B. Lian, V. S. Donge, F. L. Lewis, T. Chai, A. Davoudi*
+  *IEEE 61st Conference on Decision and Control (CDC) (2022)*
+  [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zb04ci4AAAAJ&citation_for_view=Zb04ci4AAAAJ:W7OEmFMy1HYC)
+
+### 2020
 - **Hamiltonian Monte Carlo based Path Integral for Stochastic Optimal Control**
   *P. Akshay, V. S. Donge, S. Kharade, S. R. Wagh, N. M. Singh*
   *28th Mediterranean Conference on Control and Automation (MED) (2020)*
@@ -69,8 +78,10 @@ title: "Publications"
   *7th International Conference on Control, Decision and Information Technologies (CoDIT) (2020)*
   [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zb04ci4AAAAJ&citation_for_view=Zb04ci4AAAAJ:2osOgNQ5qMEC)
 
+## Ph.D. Dissertation
+
+### 2020
 - **Learning and Control for Complex Multiagent Systems**
   *V. S. Donge*
   *PhD Dissertation, The University of Texas at Arlington (2020)*
   [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zb04ci4AAAAJ&citation_for_view=Zb04ci4AAAAJ:Se3iqnhoufwC)
-
