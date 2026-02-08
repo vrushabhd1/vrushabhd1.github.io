@@ -17,6 +17,15 @@ theme = "PaperMod"
   # Makes homepage show your posts list (blog) while allowing intro content
   mainSections = ["posts"]
 
+  [params.profileMode]
+    enabled = true
+    title = "Vrushabh Donge"
+    subtitle = "AI, systems & control, and optimization for grid modernization and power-electronics reliability."
+    imageUrl = "/img/profile.jpg"
+    imageTitle = "Vrushabh Donge"
+    imageWidth = 160
+    imageHeight = 160
+
 [menu]
   [[menu.main]]
     name = "Blog"

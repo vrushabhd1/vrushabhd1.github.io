@@ -2,21 +2,6 @@
 title: "Home"
 ---
 
-<div style="display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap;">
-  <div style="min-width:140px;">
-    <img src="/img/profile.jpg" alt="Vrushabh Donge" style="width:140px; border-radius:12px;" />
-  </div>
-  <div style="flex:1; min-width:260px;">
-    ## Vrushabh Donge
-
-    I build **AI, systems & control, and optimization-driven** solutions for **grid modernization** and **power-electronics reliability**—bridging ML/control research with real-world energy workflows.
-
-    **Interests:** reinforcement learning, grid analytics, DERMS/ADMS workflows, health monitoring (diagnostics & prognostics), optimization/MPC, time-series modeling.
-
-    **Quick links:** [About](/about/) · [Projects](/projects/) · [Publications](/publications/) · [Blog](/posts/)
-  </div>
-</div>
-
 ---
 
 ## News
