@@ -2,7 +2,7 @@
 title: "Publications"
 ---
 
-[Please check the up-to-date list on Google Scholar](https://scholar.google.com/citations?user=Zb04ci4AAAAJ&hl=en)
+[Google Scholar Profile](https://scholar.google.com/citations?user=Zb04ci4AAAAJ&hl=en) | [ResearchGate Profile](https://www.researchgate.net/profile/Vrushabh-Donge?ev=hdr_xprf)
 
 ## Journal Articles
 
