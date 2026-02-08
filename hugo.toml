@@ -20,7 +20,7 @@ theme = "PaperMod"
   [params.profileMode]
     enabled = true
     title = "Vrushabh Donge"
-    subtitle = "AI, systems & control, and optimization for grid modernization and power-electronics reliability."
+    subtitle = "Bridging advanced ML/control research with real-world energy workflows. Building AI and optimization solutions for grid modernization and reliability."
     imageUrl = "/img/profile.jpg"
     imageTitle = "Vrushabh Donge"
     imageWidth = 160
