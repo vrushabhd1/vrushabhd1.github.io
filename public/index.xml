@@ -16,18 +16,22 @@
       <description></description>
     </item>
     <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Sun, 01 Feb 2026 16:16:54 -0500</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Projects</title>
       <link>http://localhost:1313/projects/</link>
       <pubDate>Sun, 01 Feb 2026 16:16:54 -0500</pubDate>
       <guid>http://localhost:1313/projects/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;I build **AI, systems &amp;amp; control, and optimization-driven** solutions for **grid modernization** and **power-electronics reliability**—bridging advanced ML/control research with real-world energy workflows.&lt;/p&gt;
+&lt;p&gt;My research spans **reinforcement learning**, **health monitoring (diagnostics &amp;amp; prognostics)**, **multi-agent systems**, and **intelligent control** of dynamic energy systems.&lt;/p&gt;
+&lt;p&gt;## What I bring&lt;/p&gt;
+&lt;p&gt;- Translating ambiguous grid/asset problems into clear product requirements and success metrics&lt;/p&gt;
+&lt;p&gt;- Designing “minimum lovable” prototypes and iterating based on performance, reliability, and user needs&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
