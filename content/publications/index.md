@@ -117,7 +117,7 @@ title: "Publications"
 - **Data-Driven Voltage Regulation of Distribution Grid Using Nonlinear Autoregressive Model with Exogenous Inputs (NARX)**
   *V. S. Donge, J. Pinto, A. Adib, M. Chinthavali*
   *IEEE Energy Conversion Congress and Exposition (ECCE) (2025)*
-  [ResearchGate](https://www.researchgate.net/publication/374824367_Data-Driven_Voltage_Regulation_of_Distribution_Grid_Using_Nonlinear_Autoregressive_Model_with_Exogenous_Inputs_NARX)
+  [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11259959)
   <details>
   <summary>BibTeX</summary>
   <pre>
