@@ -26,38 +26,40 @@
         {{- end }}
         <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default " profile image" }}"
             title="{{ .imageTitle }}" height="{{ .imageHeight | default 250 }}" width="{{ .imageWidth | default 250 }}"
-            style="border-radius: 50%; object-fit: cover; width: 250px; height: 250px; margin-bottom: 1.5rem;" />
+            style="border-radius: 50%; object-fit: cover; width: 250px; height: 250px; margin-bottom: 1rem;" />
         {{- else }}
         <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default " profile image" }}"
             title="{{ .imageTitle }}" height="{{ .imageHeight | default 250 }}" width="{{ .imageWidth | default 250 }}"
-            style="border-radius: 50%; object-fit: cover; width: 250px; height: 250px; margin-bottom: 1.5rem;" />
+            style="border-radius: 50%; object-fit: cover; width: 250px; height: 250px; margin-bottom: 1rem;" />
         {{- end }}
         {{- end }}
 
         <h1 style="font-size: 1.5rem; margin: 0 0 0.5rem; font-weight: bold;">{{ .title | default site.Title |
             markdownify }}</h1>
-        <div style="font-size: 0.9rem; color: var(--secondary); margin-bottom: 1.5rem;">{{ .subtitle | markdownify }}
+        <div style="font-size: 0.9rem; color: var(--secondary); margin-bottom: 1rem;">{{ .subtitle | markdownify }}
         </div>
 
-        <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; justify-content: center; width: 100%;">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; justify-content: center; width: 100%;">
             {{- partial "social_icons.html" -}}
         </div>
 
         {{- with .buttons }}
-        <div class="buttons" style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+        <div class="buttons" style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%; margin-top: 1rem;">
+            <p style="font-weight: bold; margin-bottom: 0.5rem; font-size: 1rem; color: var(--primary);">Key Links</p>
             {{- range . }}
             <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}"
-                style="width: 100%; justify-content: center;">
-                <span class="button-inner">
-                    {{ .name }}
-                    {{- if (findRE "://" .url) }}&nbsp;
+                style="width: 100%; justify-content: flex-start; padding: 0.5rem 1rem; border: 1px solid var(--border); border-radius: 4px; text-decoration: none; color: var(--primary); transition: background 0.2s;">
+                <span class="button-inner" style="display: flex; align-items: center; width: 100%;">
+                    {{- if (findRE "://" .url) }}
                     <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" height="14" width="14"
+                        style="margin-right: 0.5rem;">
                         <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
                         <path d="M15 3h6v6"></path>
                         <path d="M10 14L21 3"></path>
                     </svg>
                     {{- end }}
+                    {{ .name }}
                 </span>
             </a>
             {{- end }}
@@ -87,7 +89,10 @@
         .post-content {
             padding-left: 0 !important;
             border-left: none !important;
-            width: 100%;
         }
+    }
+
+    .button:hover {
+        background: var(--entry);
     }
 </style>

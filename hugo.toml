@@ -25,6 +25,22 @@ theme = "PaperMod"
     imageTitle = "Vrushabh Donge"
     imageWidth = 160
     imageHeight = 160
+    
+    [[params.profileMode.buttons]]
+      name = "Google Scholar"
+      url = "https://scholar.google.com/citations?user=Zb04ci4AAAAJ&hl=en"
+    
+    [[params.profileMode.buttons]]
+      name = "ResearchGate"
+      url = "https://www.researchgate.net/profile/Vrushabh-Donge?ev=hdr_xprf"
+    
+    [[params.profileMode.buttons]]
+      name = "LinkedIn"
+      url = "https://www.linkedin.com/in/vrushabh-donge/"
+
+    [[params.profileMode.buttons]]
+      name = "CV"
+      url = "#"
 
 [menu]
   [[menu.main]]
