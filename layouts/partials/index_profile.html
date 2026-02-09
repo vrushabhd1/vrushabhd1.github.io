@@ -1,76 +1,93 @@
-<div class="profile">
+<div class="profile" style="display: flex; gap: 4rem; max-width: var(--main-width); margin: 0 auto; padding-top: 2rem;">
+    {{- with site.Params.profileMode }}
     <div class="profile_inner"
-        style="display: flex; gap: 4rem; align-items: flex-start; max-width: var(--main-width); margin: 0 auto; text-align: left;">
-        {{- with site.Params.profileMode }}
-        <div style="flex: 0 0 250px;">
-            {{- if .imageUrl -}}
-            {{- $img := "" }}
-            {{- if not (urls.Parse .imageUrl).IsAbs }}
-            {{- $img = resources.Get .imageUrl }}
-            {{- end }}
-            {{- if $img }}
-            {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
-            {{- if hugo.IsExtended -}}
-            {{- $processableFormats = $processableFormats | append "webp" -}}
-            {{- end -}}
-            {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
-            {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
-            {{- if (not (and (not .imageHeight) (not .imageWidth))) }}
-            {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
-            {{- else if .imageHeight }}
-            {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
-            {{ else if .imageWidth }}
-            {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
-            {{ else }}
-            {{- $img = $img.Resize "150x150" }}
-            {{- end }}
-            {{- end }}
-            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default " profile image" }}"
-                title="{{ .imageTitle }}" height="{{ .imageHeight | default 150 }}"
-                width="{{ .imageWidth | default 150 }}"
-                style="border-radius: 50%; object-fit: cover; width: 100%; height: auto;" />
-            {{- else }}
-            <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default " profile image" }}"
-                title="{{ .imageTitle }}" height="{{ .imageHeight | default 150 }}"
-                width="{{ .imageWidth | default 150 }}"
-                style="border-radius: 50%; object-fit: cover; width: 100%; height: auto;" />
-            {{- end }}
-            {{- end }}
+        style="flex: 0 0 250px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        {{- if .imageUrl -}}
+        {{- $img := "" }}
+        {{- if not (urls.Parse .imageUrl).IsAbs }}
+        {{- $img = resources.Get .imageUrl }}
+        {{- end }}
+        {{- if $img }}
+        {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+        {{- if hugo.IsExtended -}}
+        {{- $processableFormats = $processableFormats | append "webp" -}}
+        {{- end -}}
+        {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+        {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
+        {{- if (not (and (not .imageHeight) (not .imageWidth))) }}
+        {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
+        {{- else if .imageHeight }}
+        {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
+        {{ else if .imageWidth }}
+        {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
+        {{ else }}
+        {{- $img = $img.Resize "250x250" }}
+        {{- end }}
+        {{- end }}
+        <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default " profile image" }}"
+            title="{{ .imageTitle }}" height="{{ .imageHeight | default 250 }}" width="{{ .imageWidth | default 250 }}"
+            style="border-radius: 50%; object-fit: cover; width: 250px; height: 250px; margin-bottom: 1.5rem;" />
+        {{- else }}
+        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default " profile image" }}"
+            title="{{ .imageTitle }}" height="{{ .imageHeight | default 250 }}" width="{{ .imageWidth | default 250 }}"
+            style="border-radius: 50%; object-fit: cover; width: 250px; height: 250px; margin-bottom: 1.5rem;" />
+        {{- end }}
+        {{- end }}
 
-            <h1 style="font-size: 1.5rem; margin-top: 1rem; margin-bottom: 0.5rem; text-align: center;">{{ .title |
-                default site.Title | markdownify }}</h1>
-            <div style="font-size: 0.9rem; color: var(--secondary); margin-bottom: 1rem; text-align: center;">{{
-                .subtitle | markdownify }}</div>
+        <h1 style="font-size: 1.5rem; margin: 0 0 0.5rem; font-weight: bold;">{{ .title | default site.Title |
+            markdownify }}</h1>
+        <div style="font-size: 0.9rem; color: var(--secondary); margin-bottom: 1.5rem;">{{ .subtitle | markdownify }}
+        </div>
 
-            <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
-                {{- partial "social_icons.html" -}}
-            </div>
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; justify-content: center; width: 100%;">
+            {{- partial "social_icons.html" -}}
+        </div>
 
-            {{- with .buttons }}
-            <div class="buttons" style="justify-content: center;">
-                {{- range . }}
-                <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
-                    <span class="button-inner">
-                        {{ .name }}
-                        {{- if (findRE "://" .url) }}&nbsp;
-                        <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24"
-                            height="14" width="14">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                            <path d="M15 3h6v6"></path>
-                            <path d="M10 14L21 3"></path>
-                        </svg>
-                        {{- end }}
-                    </span>
-                </a>
-                {{- end }}
-            </div>
+        {{- with .buttons }}
+        <div class="buttons" style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+            {{- range . }}
+            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}"
+                style="width: 100%; justify-content: center;">
+                <span class="button-inner">
+                    {{ .name }}
+                    {{- if (findRE "://" .url) }}&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                    {{- end }}
+                </span>
+            </a>
             {{- end }}
         </div>
-        {{- end}}
+        {{- end }}
+    </div>
+    {{- end}}
 
-        <div class="post-content" style="flex: 1;">
-            {{ .Content }}
-        </div>
+    <div class="post-content" style="flex: 1; padding-left: 2rem; border-left: 1px solid var(--border);">
+        {{ .Content }}
     </div>
 </div>
+
+<style>
+    @media screen and (max-width: 768px) {
+        .profile {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem !important;
+        }
+
+        .profile_inner {
+            width: 100% !important;
+            flex: auto !important;
+        }
+
+        .post-content {
+            padding-left: 0 !important;
+            border-left: none !important;
+            width: 100%;
+        }
+    }
+</style>
