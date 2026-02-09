@@ -17,9 +17,8 @@ theme = "PaperMod"
   # Makes homepage show your posts list (blog) while allowing intro content
   mainSections = ["posts"]
 
-  # Profile Mode disabled to show full homepage content
   [params.profileMode]
-    enabled = false
+    enabled = true
     title = "Vrushabh Donge"
     subtitle = "Bridging advanced ML/control research with real-world energy workflows. Building AI and optimization solutions for grid modernization and reliability."
     imageUrl = "/img/profile.jpg"
@@ -41,4 +40,7 @@ theme = "PaperMod"
     url = "/projects/"
     weight = 3
 
-
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 5
